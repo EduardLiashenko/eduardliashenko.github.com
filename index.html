@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My CV</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			font-family: 'Roboto', sans-serif;
+			background-color: #40e0d0;
+			height: 100%;
+		}
+
+		.container {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+		}
+
+		.button{
+			cursor: pointer;
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+		}
+
+		.text{
+			background-color: #008080;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 18px;
+			height: 70px;
+			padding: 0 25px;
+			line-height: 70px;
+		}
+
+		.icon-cv{
+			font-size: 30px;
+			width: 70px;
+			height: 70px;
+			line-height: 60px;
+			box-sizing: border-box;
+			border: 4px solid #008080;
+			border-left: none;
+			-webkit-transition: 600ms -webkit-transform ease-in-out;
+			transition: 600ms -webkit-transform ease-in-out;
+			transition: 600ms transform ease-in-out;
+			transition: 600ms transform ease-in-out, 600ms -webkit-transform ease-in-out;
+			-webkit-transform: rotateY(90deg);
+			        transform: rotateY(90deg);
+			-webkit-transform-origin: left;
+			        transform-origin: left;
+			color: #008080;
+			background-color: #fff;
+			text-align: center;
+		}
+
+		.button:hover .icon-cv{
+			-webkit-transform: rotateY(0deg);
+			        transform: rotateY(0deg);
+		}
+
+		.button{
+			-webkit-perspective: 200px;
+			        perspective: 200px;
+			-webkit-perspective-origin: calc(100% - 70px);
+			        perspective-origin: calc(100% - 70px);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="button">
+			<div class="text">Download CV</div>
+			<div class="icon-cv"><a href="https://www.linkedin.com/in/eduardliashenko/" download="cv"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></div>
+		</div>
+	</div>
+</body>
+</html>
