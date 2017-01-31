@@ -90,7 +90,7 @@
             </div>
         </div>
     </section>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
         function animate() {
             context.clearRect(0, 0, screenW, screenH), $.each(stars, function() {
@@ -104,7 +104,7 @@
         var context, screenH, screenW, stars = [],
             fps = 50,
             numStars = 1500;
-        $("document").ready(function() {
+        jquery("document").ready(function() {
             screenH = $(window).height(), screenW = $(window).width(), canvas = $("#space"), canvas.attr("height", screenH), canvas.attr("width", screenW), context = canvas[0].getContext("2d");
             for (var a = 0; a < numStars; a++) {
                 var b = Math.round(Math.random() * screenW),
