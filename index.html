@@ -3,15 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My CV</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<style type="text/css">
 		body{
-			font-family: 'Roboto', sans-serif;
-			background-color: #40e0d0;
-			height: 100%;
+			font-family: 'Open Sans', sans-serif;
+		}
+		#wrapper{
+			width: 100%;
+			margin-top: calc(50vh - 37px);
 		}
 
+		#space {
+		  	position: absolute;
+			top: 0;
+			left: 0;
+		  	background: #000000;
+		}
 		.container {
 			display:-webkit-box;
 			display:-ms-flexbox;
@@ -29,22 +37,22 @@
 		}
 
 		.text{
-			background-color: #008080;
 			color: #fff;
 			text-transform: uppercase;
 			font-size: 18px;
 			height: 70px;
 			padding: 0 25px;
 			line-height: 70px;
+			border: 2px solid #fff;
 		}
 
 		.icon-cv{
 			font-size: 30px;
 			width: 70px;
-			height: 70px;
-			line-height: 60px;
+			height: auto;
+			line-height: 65px;
 			box-sizing: border-box;
-			border: 4px solid #008080;
+			border: 2px solid #fff;
 			border-left: none;
 			-webkit-transition: 600ms -webkit-transform ease-in-out;
 			transition: 600ms -webkit-transform ease-in-out;
@@ -54,8 +62,6 @@
 			        transform: rotateY(90deg);
 			-webkit-transform-origin: left;
 			        transform-origin: left;
-			color: #008080;
-			background-color: #fff;
 			text-align: center;
 		}
 
@@ -70,14 +76,50 @@
 			-webkit-perspective-origin: calc(100% - 70px);
 			        perspective-origin: calc(100% - 70px);
 		}
+		.fa.fa-arrow-circle-down{color: #fff};
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="button">
-			<div class="text">Download CV</div>
-			<div class="icon-cv"><a href="https://www.linkedin.com/in/eduardliashenko/" download="cv"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></div>
-		</div>
-	</div>
+    <section id="wrapper">
+        <div class="container">
+            <canvas id="space"></canvas>
+            <div class="button">
+                <div class="text">Download PDF</div>
+                <div class="icon-cv"><a href="https://drive.google.com/file/d/0B9CVRfm8Aps8RGxvVlAwVlE2OGc/view"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        function animate() {
+            context.clearRect(0, 0, screenW, screenH), $.each(stars, function() {
+                this.draw(context)
+            })
+        }
+
+        function Star(a, b, c, d) {
+            this.x = parseInt(a), this.y = parseInt(b), this.length = parseInt(c), this.opacity = d, this.factor = 1, this.increment = .03 * Math.random()
+        }
+        var context, screenH, screenW, stars = [],
+            fps = 50,
+            numStars = 1500;
+        $("document").ready(function() {
+            screenH = $(window).height(), screenW = $(window).width(), canvas = $("#space"), canvas.attr("height", screenH), canvas.attr("width", screenW), context = canvas[0].getContext("2d");
+            for (var a = 0; a < numStars; a++) {
+                var b = Math.round(Math.random() * screenW),
+                    c = Math.round(Math.random() * screenH),
+                    d = 1 + 2 * Math.random(),
+                    e = Math.random(),
+                    f = new Star(b, c, d, e);
+                stars.push(f)
+            }
+            setInterval(animate, 1e3 / fps)
+        }), Star.prototype.draw = function() {
+            context.rotate(1 * Math.PI / 10), context.save(), context.translate(this.x, this.y), this.opacity > 1 ? this.factor = -1 : this.opacity <= 0 && (this.factor = 1, this.x = Math.round(Math.random() * screenW), this.y = Math.round(Math.random() * screenH)), this.opacity += this.increment * this.factor, context.beginPath();
+            for (var a = 5; a--;) context.lineTo(0, this.length), context.translate(0, this.length), context.rotate(2 * Math.PI / 10), context.lineTo(0, -this.length), context.translate(0, -this.length), context.rotate(-(6 * Math.PI / 10));
+            context.lineTo(0, this.length), context.closePath(), context.fillStyle = "rgba(255, 255, 200, " + this.opacity + ")", context.shadowBlur = 5, context.shadowColor = "#ffff33", context.fill(), context.restore()
+        };
+    </script>
 </body>
 </html>
