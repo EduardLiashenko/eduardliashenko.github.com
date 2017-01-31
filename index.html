@@ -104,7 +104,7 @@
         var context, screenH, screenW, stars = [],
             fps = 50,
             numStars = 1500;
-        jquery("document").ready(function() {
+        $("document").ready(function() {
             screenH = $(window).height(), screenW = $(window).width(), canvas = $("#space"), canvas.attr("height", screenH), canvas.attr("width", screenW), context = canvas[0].getContext("2d");
             for (var a = 0; a < numStars; a++) {
                 var b = Math.round(Math.random() * screenW),
