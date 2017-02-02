@@ -63,7 +63,7 @@ body{margin:0;padding:0}
 .page{display:block;position:relative;min-height:100vh;z-index:10;overflow:hidden}
 .page-home .page > *{position:relative;z-index:10}
 .page-home section.hello{position:relative;z-index:2!important}
-.bg-hello{position:absolute;width:50%;height:100%;background-image:url(../images/img.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;left:0;transition:left .7s linear}
+.bg-hello{position:absolute;width:50%;height:100%;background-image:url(../images/img.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;left:0;transition:left .7s linear;z-index: 100}
 .hello-hidden .bg-hello{left:50%}
 @media (min-width: 1600px) {
 .padding{padding:20vh 165px 20vh 22%}
