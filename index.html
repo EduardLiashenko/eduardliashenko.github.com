@@ -6,14 +6,15 @@
     <title>Eduard Liashenko</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
 </head>
 
 <body class="page-home showHello loaded">
-    <div class="container">
+    <div class="container" id="main-wrap">
         <header class="header">
             <ul class="logo">
-                <li><a href="index.html" rel="external">eduard liashenko</a>
+                <li>
+                    <a href="index.html" rel="external"><span>eduard liashenko</span></a>
                 </li>
             </ul>
             <ul class="email">
@@ -87,11 +88,11 @@
                         <section class="hello">
                             <div class="bg-hello"></div>
                             <div class="padding">
-                                <h1>hello.
+                                <h1 class="bounceInUp">hello.
                                     <span>I’m Eduard, a ukrainian<br>front-end developer<br>working in Kyiv, Ukraine</span>
                                 </h1>
                             </div>
-                            <span class="hello-scrolldown" style="bottom: 10%">
+                            <span class="hello-scrolldown">
                                 <i class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 17 10"><path class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg></i>
                                 <span class="txt"><span>S</span><span>c</span><span>r</span><span>o</span><span>l</span><span>l</span></span>
                             </span>
@@ -104,7 +105,7 @@
                                 </span>
                                 <span class="block-title">
                                     <span class="title">EXPERIENCE</span>
-                                <p class="txt">junior Front-End Developer – FaceInteractive</p>
+                                <p class="txt">junior Front-End Developer – <a target="_blank" href="https://face.ua/"><span>FaceInteractive</span></a></p>
                                 </span>
                                 <span class="block-title">
                                     <span class="title">SKILLS</span>
@@ -112,16 +113,16 @@
                                 </span>
                                 <span class="block-title">
                                     <span class="title">Projects</span>
-                                    <p class="txt">
-                                        <a target="_blank" href="https://gotovo.net.ua/">Dokument-servis “Gotovo”</a><br>
-                                        <a target="_blank" href="https://liga.net">LIGA Group companies</a><br>
-                                        <a target="_blank" href="https://trailukraine.com/">TrailUkraine</a><br>
-                                        <a target="_blank" href="http://ps-horti.com/">PowerStar</a>
-                                    </p>
+                                        <p class="txt">
+                                            <a target="_blank" href="https://gotovo.net.ua/"><span>Dokument-servis “Gotovo”</span></a><br>
+                                            <a target="_blank" href="http://liga.net"><span>LIGA Group companies</span></a><br>
+                                            <a target="_blank" href="https://trailukraine.com/"><span>TrailUkraine</span></a><br>
+                                            <a target="_blank" href="http://ps-horti.com/"><span>PowerStar</span></a>
+                                        </p>
                                 </span>
 
                             </div>
-                            <span class="hello-scrolldown" style="bottom: 20%;">
+                            <span class="hello-scrolldown">
                                 <i class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 17 10"><path class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg></i>
                                 <span class="txt"><span>S</span><span>c</span><span>r</span><span>o</span><span>l</span><span>l</span></span>
                             </span>
@@ -137,7 +138,6 @@
         <div class="left"></div>
         <div class="right"></div>
     </div>
-    <div style="height: 20px;"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script type="text/javascript">
         window.onscroll = function() {
@@ -156,5 +156,76 @@
                 $('body').removeClass('hello-hidden');
             }
         };
+		
+		elem = document.getElementById('main-wrap');
+		if (elem.addEventListener) {
+		  if ('onwheel' in document) {
+			// IE9+, FF17+, Ch31+
+			elem.addEventListener("wheel", onWheel);
+		  } else if ('onmousewheel' in document) {
+			// устаревший вариант события
+			elem.addEventListener("mousewheel", onWheel);
+		  } else {
+			// Firefox < 17
+			elem.addEventListener("MozMousePixelScroll", onWheel);
+		  }
+		} else { // IE8-
+		  elem.attachEvent("onmousewheel", onWheel);
+		}
+
+		function onWheel(e) {
+		  e = e || window.event;
+		  
+		  if(e.deltaY > 0){
+			$('body').addClass('hello-hidden');
+		 }else{
+				$('body').removeClass('hello-hidden');
+			}
+		}
+		
+		$(document).ready(function(){
+			$('body').touchScroll();
+		});
+		
+		$.fn.touchScroll = function(){
+		var startPos = [],
+			endPos = [];
+
+    $(document).on('touchstart','body', function(event) {
+		$('.preambule').addClass('druggin');
+		var e = event.originalEvent;
+		startPos[0] =  e.touches[0].pageX;
+		startPos[1] = e.touches[0].pageY;
+    });
+
+	$(document).on('touchmove','body ', function(event) {
+
+		var e = event.originalEvent;
+		var offset =Math.abs(e.touches[0].pageY - startPos[1]) *100/$('body').height();
+		console.log(offset);
+		
+
+		body_w = $('body').width();
+		endPos[0] =  e.touches[0].pageX;
+		endPos[1] = e.touches[0].pageY;
+		if($('body').hasClass('hello-hidden')){
+			$('.preambule').css('left', '-' + offset +'%');
+		}else{
+			$('.preambule').css('left', '-' + (100 - offset) +'%');
+		}
+		
+		
+    });
+
+	$(document).on('touchend','body', function(event) {
+		if(endPos[1] > startPos[1]){
+			$('body').addClass('hello-hidden');
+		}else{
+			$('body').removeClass('hello-hidden');
+		}
+		$('.preambule').removeClass('druggin');
+		$('.preambule').css('left','');
+	});
+}; 
     </script>
 </body>
