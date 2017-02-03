@@ -707,7 +707,7 @@ h1 {
 .page-home section.preambule .hello-scrolldown .arrow svg path {
     fill: #fff
 }
-span .title:after {
+/*span .title:after {
     content: "";
     display: block;
     height: 1px;
@@ -718,7 +718,7 @@ span .title:after {
     opacity: .8;
     position: absolute;
     top: 20px;
-}
+}*/
 /*p a{color:#fff;text-decoration:none;line-height:1.2}
 p a:hover{opacity:.5}*/
 
