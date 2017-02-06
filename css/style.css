@@ -438,9 +438,10 @@ h1 span {
     .page-home section.hello h1 {
         font-size: 6rem;
         margin: 0 3%;
+        top: 20%;
     }
     .page-home section.hello h1 span {
-        bottom: -10%;
+        bottom: -15%;
     }
     .bg-hello{
         background-size: cover;
@@ -454,6 +455,24 @@ h1 span {
     .page-home section.hello h1 span {
         bottom: -15%;
     }
+}
+
+@media (max-width: 425px) {
+   .header .logo{
+        display: none;
+   }
+   .email a{
+        font-size: 1rem;
+   }
+   .page-home section.hello h1{
+        font-size: 5rem;
+   }
+   .page-home section.hello h1 span{
+        font-size: .65rem;
+   }
+   .page-home.showHello section.hello .hello-scrolldown{
+        left: 63.5%;
+   }
 }
 
 .page-home.showHello section.hello .hello-scrolldown {
