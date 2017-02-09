@@ -862,6 +862,7 @@ h1 span
     line-height: 1.2;
 
     color: #fff;
+    margin: 0 0 25px 0;
 }
 .page-home section.preambule p div
 {
@@ -1035,6 +1036,8 @@ h1 span
 .title
 {
     position: relative;
+    display: block;
+    margin: 5px 0;
 }
 .txt a
 {
@@ -1042,7 +1045,7 @@ h1 span
 
     position: relative;
 
-    padding: 0 5px;
+    /*padding: 0 5px;*/
 
     text-decoration: none;
 
@@ -1053,8 +1056,8 @@ h1 span
     position: absolute;
     z-index: -1;
     top: 35%;
-    right: 0;
-    left: 0;
+    right: -5px;
+    left: -5px;
 
     display: block;
 
