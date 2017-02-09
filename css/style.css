@@ -281,14 +281,34 @@ h1 span {
 .bg-hello {
     position: absolute;
     width: 50%;
-    height: 100%;
-    background-image: url(../images/img.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    min-height: 100%;
     left: 0;
     transition: left .7s linear;
-    z-index: 100
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.bg-hello img {
+     width: 100%;
+}
+@media (max-width: 768px) {
+    .bg-hello {
+        text-align: center;
+        background-color: #2db69a;
+        bottom: 0;
+        min-height: 50%;
+        width: 100%;
+    }
+    .bg-hello img {
+        width: 50%;
+    }
+    .hello-scrolldown {
+        display: none;
+    }
 }
 .hello-hidden .bg-hello {
     left: 50%
@@ -434,17 +454,15 @@ h1 span {
         left: 58.5%;
 }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-home section.hello h1 {
-        font-size: 6rem;
-        margin: 0 3%;
-        top: 20%;
+        font-size: 13rem;
+        top: 7%;
+        left: 15%;
     }
     .page-home section.hello h1 span {
-        bottom: -15%;
-    }
-    .bg-hello{
-        background-size: cover;
+        bottom: -2%;
+        font-size: 1rem;
     }
     .page-home.showHello section.hello .hello-scrolldown{
         bottom: 45px!important;
@@ -620,11 +638,6 @@ section.preambule {
     color: #fff;
     font-weight: 500;
 }
-@media (min-width: 992px) {
-    .page-home section.preambule p {
-        font-size: 1.2rem;
-    }
-}
 .page-home section.preambule p div {
     overflow: hidden
 }
@@ -636,15 +649,9 @@ section.preambule {
     color: #1c1b20;
     font-weight: 700
 }
-@media (max-width: 762px) {
-    .page-home section.preambule p {
-        font-size: .8rem;
-    }
+@media (max-width: 768px) {
     .page-home section.preambule .padding {
         padding: 60px;
-    }
-    .page-home section.preambule .hello-scrolldown {
-        bottom: -10%!important;
     }
     .header .list-socials {
         top: 40%;
