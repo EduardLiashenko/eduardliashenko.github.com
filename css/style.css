@@ -358,7 +358,7 @@ h1 span
     transition: left .7s linear;
 
     background-color: #32ceaf;
-    background-image: url('../images/myphoto_ftidnk_c_scalew_1920.png');
+    background-image: url('../images/myphoto_ftidnk_c_scalew_1920_.png');
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: contain;
@@ -484,7 +484,7 @@ h1 span
 
     position: absolute;
     bottom: 10%;
-    left: 2%;
+    left: 3%;
 
     opacity: .7;
     color: #1a282e;
@@ -627,14 +627,14 @@ h1 span
 {
     .page-home section.hello h1
     {
-        font-size: 12rem;
+        font-size: 6rem;
 
-        top: 7%;
+        top: 5%;
         left: 15%;
     }
     .page-home section.hello h1 span
     {
-        font-size: .9rem;
+        font-size: .5rem;
 
         bottom: -2%;
         left: 3%;
@@ -653,22 +653,28 @@ h1 span
 }
 
 @media (max-width: 425px)
-{
-    .header .logo
-    {
-        display: none;
+{   
+    .logo a{
+        font-size: 1.6rem;
+    }
+    .header .email{
+        top: 0;
+        right: 5px;
     }
     .email a
     {
-        font-size: 1rem;
+        font-size: .6rem;
     }
     .page-home section.hello h1
     {
-        font-size: 5rem;
+        font-size: 8rem;
+        left: 10%;
+        top: 9%;
     }
     .page-home section.hello h1 span
     {
         font-size: .65rem;
+        bottom: 0;
     }
     .page-home.showHello section.hello .hello-scrolldown
     {
@@ -884,11 +890,16 @@ h1 span
 {
     .page-home section.preambule .padding
     {
-        padding: 60px;
+        padding: 50px;
     }
     .header .list-socials
     {
         top: 40%;
+    }
+    .title{font-size: .8rem;}
+    .page-home section.preambule p{
+        font-size: .8rem;
+        margin: 0 0 15px 0;
     }
 }
 @-webkit-keyframes bounce

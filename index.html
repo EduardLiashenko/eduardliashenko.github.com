@@ -34,8 +34,6 @@
                         </i>
                     </a>
                 </li>
-
-
                 <li>
                     <a href="https://github.com/EduardLiashenko" rel="external" target="_blank">
                         <i class="icon">
@@ -45,10 +43,6 @@
                         </i>
                     </a>
                 </li>
-
-
-
-
                 <li>
                     <a href="https://www.facebook.com/eduard.lyashenko.ua" rel="external" target="_blank">
                         <i class="icon">
@@ -81,22 +75,12 @@
                 </li>
             </ul>
         </header>
-
-
         <div class="app">
             <div class="page-container">
                 <main class="page" data-class="page-home" data-wp-title="Accueil" data-href="http://www.wokine.com/">
                     <div class="intro">
                         <section class="hello">
-                            <div class="bg-hello">
-                         <!--        <picture>
-                                    <img
-                                    sizes="(max-width: 1920px) 100vw, 1920px"
-                                    srcset="images/myphoto_ftidnk_c_scalew_1920.png"
-                                    src="images/myphoto_ftidnk_c_scalew_1920.png"
-                                    alt="My photo">
-                                </picture> -->
-                            </div>
+                            <div class="bg-hello"></div>
                             <div class="padding">
                                 <h1>hello.
                                     <span>I’m Eduard, Ukrainian<br>front-end developer<br>working in Kyiv, Ukraine</span>
@@ -124,13 +108,13 @@
                                 <span class="block-title">
                                     <span class="title">Projects</span>
                                         <p class="txt">
-                                            <a target="_blank" href="https://gotovo.net.ua/"><span>Dokument-servis “Gotovo”</span></a><br>
-                                            <a target="_blank" href="http://liga.net"><span>LIGA Group companies</span></a><br>
                                             <a target="_blank" href="https://trailukraine.com/"><span>TrailUkraine</span></a><br>
-                                            <a target="_blank" href="http://ps-horti.com/"><span>PowerStar</span></a>
+                                            <a target="_blank" href="http://ps-horti.com/"><span>PowerStar</span></a><br>
+                                            <a target="_blank" href="http://liga.net"><span>LIGA Group companies</span></a><br>
+                                            <a target="_blank" href="https://trailukraine.com/"><span>TrailUkraine</span></a>
+                                            <a target="_blank" href="https://gotovo.net.ua/"><span>Dokument-servis “Gotovo”</span></a>
                                         </p>
                                 </span>
-
                             </div>
                             <span class="hello-scrolldown">
                                 <i class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 17 10"><path class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path></svg></i>
@@ -166,7 +150,7 @@
                 $('body').removeClass('hello-hidden');
             }
         };
-		
+
 		elem = document.getElementById('main-wrap');
 		if (elem.addEventListener) {
 		  if ('onwheel' in document) {
@@ -185,18 +169,18 @@
 
 		function onWheel(e) {
 		  e = e || window.event;
-		  
+
 		  if(e.deltaY > 0){
 			$('body').addClass('hello-hidden');
 		 }else{
 				$('body').removeClass('hello-hidden');
 			}
 		}
-		
+
 		$(document).ready(function(){
 			$('body').touchScroll();
 		});
-		
+
 		$.fn.touchScroll = function(){
 		var startPos = [],
 			endPos = [];
@@ -213,7 +197,6 @@
 		var e = event.originalEvent;
 		var offset =Math.abs(e.touches[0].pageY - startPos[1]) *100/$('body').height();
 		console.log(offset);
-		
 
 		body_w = $('body').width();
 		endPos[0] =  e.touches[0].pageX;
@@ -223,8 +206,7 @@
 		}else{
 			$('.preambule').css('left', '-' + (100 - offset) +'%');
 		}
-		
-		
+
     });
 
 	$(document).on('touchend','body', function(event) {
