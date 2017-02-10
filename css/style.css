@@ -1100,7 +1100,7 @@ h1 span
          -o-transform: scaleX(1) translateY(-50%);
             transform: scaleX(1) translateY(-50%);
 }
-/*h1:before{
+h1:before{
     position: absolute;
     z-index: -1;
     top: 35%;
@@ -1135,7 +1135,7 @@ h1:hover::before
         -ms-transform: scaleX(1) translateY(-50%);
          -o-transform: scaleX(1) translateY(-50%);
             transform: scaleX(1) translateY(-50%);
-}*/
+}
 
 .name {
   display: -webkit-box;
