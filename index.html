@@ -82,7 +82,13 @@
                         <section class="hello">
                             <div class="bg-hello"></div>
                             <div class="padding">
-                                <h1>hello.
+                                <h1 class="name"><!-- hello. -->
+                                    <div class="letter">h</div>
+                                    <div class="letter">e</div>
+                                    <div class="letter">l</div>
+                                    <div class="letter">l</div>
+                                    <div class="letter">o</div>
+                                    <div class="letter">.</div>
                                     <span>I’m Eduard, Ukrainian<br>front-end developer<br>working in Kyiv, Ukraine</span>
                                 </h1>
                             </div>
@@ -220,4 +226,22 @@
 	});
 }; 
     </script>
+    <!-- animejs -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+     <script type="text/javascript">
+         var opac = anime({
+              targets: '.letter',
+                opacity:1,
+                scale:1,
+                easing:'easeInBounce',
+                delay: function(el, index) {
+                  return index * 80;
+                },
+              direction: 'normal',
+              complete: function(){
+                $('.letter').addClass('no-animate');
+              },
+              loop: false
+            });
+     </script>
 </body>
