@@ -224,8 +224,8 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
     animation-name: slideLeft;
     -webkit-animation-name: slideLeft;  
 
-    animation-duration: 2s; 
-    -webkit-animation-duration: 2s;
+    animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
 
     animation-timing-function: ease-in-out; 
     -webkit-animation-timing-function: ease-in-out;     
