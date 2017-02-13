@@ -131,12 +131,17 @@ h1 span{letter-spacing:0}
 .page-home.showHello section.hello .hello-scrolldown{left:58.5%}
 }
 @media (max-width: 768px) {
-.page-home section.hello h1{font-size:6rem;top:5%;left:15%}
+.header .logo{display: none;}
+.page-home section.hello h1{font-size:6rem;top:2%;left:15%}
 .page-home section.hello h1 span{font-size:.5rem;bottom:-2%;left:3%}
 .page-home.showHello section.hello .hello-scrolldown{bottom:45px!important}
 }
 @media (max-width: 640px) {
-.page-home section.hello h1 span{bottom:-15%}
+.header .email{top:10px;}
+.page-home section.hello h1 span{bottom:0}
+}
+@media (max-width : 568px) {
+.page-home section.hello h1{top:0;}
 }
 @media (max-width: 425px) {
 .logo a{display:none; font-size:1.1rem}
@@ -145,6 +150,9 @@ h1 span{letter-spacing:0}
 .page-home section.hello h1{font-size:8rem;left:10%;top:9%}
 .page-home section.hello h1 span{font-size:.65rem;bottom:0}
 .page-home.showHello section.hello .hello-scrolldown{left:63.5%}
+}
+@media (max-width: 320px){
+.page-home section.hello h1 {font-size: 7rem;}
 }
 .page-home.showHello section.hello .hello-scrolldown{-webkit-transform:rotate(-90deg) translateY(-60px);-moz-transform:rotate(-90deg) translateY(-60px);-ms-transform:rotate(-90deg) translateY(-60px);-o-transform:rotate(-90deg) translateY(-60px);transform:rotate(-90deg) translateY(-60px);opacity:1}
 .page-home.showHello header.header .scrolldown{bottom:-100px}
