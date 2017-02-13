@@ -139,8 +139,8 @@ h1 span{letter-spacing:0}
 .page-home section.hello h1 span{bottom:-15%}
 }
 @media (max-width: 425px) {
-.logo a{font-size:1.5rem}
-.header .email{top:5px;right:5px}
+.logo a{display:none; font-size:1.1rem}
+.header .email{top:10px;right:10px}
 .email a{font-size:.6rem}
 .page-home section.hello h1{font-size:8rem;left:10%;top:9%}
 .page-home section.hello h1 span{font-size:.65rem;bottom:0}
