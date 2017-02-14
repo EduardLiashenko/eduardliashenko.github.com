@@ -65,13 +65,13 @@ h1 span{letter-spacing:0}
 .page-home section.hello{position:relative;z-index:2!important}
 .bg-hello{position:absolute;z-index:100;top:40px;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;width:50%;min-height:calc(100% - 80px);transition:left .7s linear;background-color:#32ceaf;background-image:url(../images/medium.png);background-repeat:no-repeat;background-position:50% 100%;background-size:contain;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 @media (max-width: 768px) {
-.bg-hello {background-image: url(../images/small.png);}
+.bg-hello{background-image:url(../images/small.png)}
 }
 @media (min-width: 1400px) {
-.bg-hello {background-image: url(../images/large.png);}
+.bg-hello{background-image:url(../images/large.png)}
 }
 @media (min-width: 1600px) {
-.bg-hello {background-image: url(../images/extralarge.png);}
+.bg-hello{background-image:url(../images/extralarge.png)}
 }
 .bg-hello img{width:100%}
 @media (max-width: 768px) {
@@ -131,28 +131,28 @@ h1 span{letter-spacing:0}
 .page-home.showHello section.hello .hello-scrolldown{left:58.5%}
 }
 @media (max-width: 768px) {
-.header .logo{display: none;}
+.header .logo{display:none}
 .page-home section.hello h1{font-size:6rem;top:2%;left:15%}
 .page-home section.hello h1 span{font-size:.5rem;bottom:-2%;left:3%}
 .page-home.showHello section.hello .hello-scrolldown{bottom:45px!important}
 }
 @media (max-width: 640px) {
-.header .email{top:10px;}
+.header .email{top:10px}
 .page-home section.hello h1 span{bottom:0}
 }
 @media (max-width : 568px) {
-.page-home section.hello h1{top:0;}
+.page-home section.hello h1{top:0}
 }
 @media (max-width: 425px) {
-.logo a{display:none; font-size:1.1rem}
+.logo a{display:none;font-size:1.1rem}
 .header .email{top:10px;right:10px}
 .email a{font-size:.6rem}
 .page-home section.hello h1{font-size:8rem;left:10%;top:9%}
 .page-home section.hello h1 span{font-size:.65rem;bottom:0}
 .page-home.showHello section.hello .hello-scrolldown{left:63.5%}
 }
-@media (max-width: 320px){
-.page-home section.hello h1 {font-size: 7rem;}
+@media (max-width: 320px) {
+.page-home section.hello h1{font-size:7rem}
 }
 .page-home.showHello section.hello .hello-scrolldown{-webkit-transform:rotate(-90deg) translateY(-60px);-moz-transform:rotate(-90deg) translateY(-60px);-ms-transform:rotate(-90deg) translateY(-60px);-o-transform:rotate(-90deg) translateY(-60px);transform:rotate(-90deg) translateY(-60px);opacity:1}
 .page-home.showHello header.header .scrolldown{bottom:-100px}
@@ -218,6 +218,17 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 .page-home section.preambule .hello-scrolldown .arrow svg path{fill:#fff}
 .block-title{font-weight:800;text-transform:uppercase}
 .block-title p{text-transform:initial}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+.page-home section.hello h1{font-size:13rem;top:8%}
+.page-home section.hello h1 span{font-size:.8rem;bottom:5%;left:3%}
+.title{font-size:1.5rem}
+.page-home section.preambule p{font-size:1.5rem}
+.page-home section.preambule .padding{padding:60px}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+.page-home section.hello h1{font-size:10.5rem;top:20%}
+.page-home section.hello h1 span{font-size:.8rem;bottom:5%;left:3%}
+}
 @media (min-width: 1600px) {
 .block-title{font-size:1.3rem}
 .page-home section.preambule p{font-size:1.2rem}
@@ -226,62 +237,20 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 .txt a{line-height:1.5;position:relative;text-decoration:none;color:#fff}
 .txt a span:before{position:absolute;z-index:-1;top:35%;right:-5px;left:-5px;display:block;height:14px;content:'';-webkit-transition:-webkit-transform 400ms cubic-bezier(1,0,0,1);-moz-transition:-moz-transform 400ms cubic-bezier(1,0,0,1);transition:transform 400ms cubic-bezier(1,0,0,1);-webkit-transform:scaleX(0) translateY(-50%);-moz-transform:scaleX(0) translateY(-50%);-ms-transform:scaleX(0) translateY(-50%);-o-transform:scaleX(0) translateY(-50%);transform:scaleX(0) translateY(-50%);-webkit-transform-origin:left center;-moz-transform-origin:left center;-ms-transform-origin:left center;-o-transform-origin:left center;transform-origin:left center;opacity:1;background:#0f1525}
 .txt a:hover span:before{-webkit-transform:scaleX(1) translateY(-50%);-moz-transform:scaleX(1) translateY(-50%);-ms-transform:scaleX(1) translateY(-50%);-o-transform:scaleX(1) translateY(-50%);transform:scaleX(1) translateY(-50%)}
-
-
-.slideLeft{
-    animation-name: slideLeft;
-    -webkit-animation-name: slideLeft;  
-
-    animation-duration: 4s; 
-    -webkit-animation-duration: 4s;
-
-    animation-timing-function: ease-in-out; 
-    -webkit-animation-timing-function: ease-in-out;     
-
-    visibility: visible !important; 
-}
-
+.slideLeft{animation-name:slideLeft;-webkit-animation-name:slideLeft;animation-duration:4s;-webkit-animation-duration:4s;animation-timing-function:ease-in-out;-webkit-animation-timing-function:ease-in-out;visibility:visible!important}
 @keyframes slideLeft {
-    0% {
-        transform: translateX(150%);
-    }
-    50%{
-        transform: translateX(-8%);
-    }
-    65%{
-        transform: translateX(4%);
-    }
-    80%{
-        transform: translateX(-4%);
-    }
-    95%{
-        transform: translateX(2%);
-    }           
-    100% {
-        transform: translateX(0%);
-    }
+0%{transform:translateX(150%)}
+50%{transform:translateX(-8%)}
+65%{transform:translateX(4%)}
+80%{transform:translateX(-4%)}
+95%{transform:translateX(2%)}
+100%{transform:translateX(0%)}
 }
-
 @-webkit-keyframes slideLeft {
-    0% {
-        -webkit-transform: translateX(150%);
-    }
-    50%{
-        -webkit-transform: translateX(-8%);
-    }
-    65%{
-        -webkit-transform: translateX(4%);
-    }
-    80%{
-        -webkit-transform: translateX(-4%);
-    }
-    95%{
-        -webkit-transform: translateX(2%);
-    }           
-    100% {
-        -webkit-transform: translateX(0%);
-    }
+0%{-webkit-transform:translateX(150%)}
+50%{-webkit-transform:translateX(-8%)}
+65%{-webkit-transform:translateX(4%)}
+80%{-webkit-transform:translateX(-4%)}
+95%{-webkit-transform:translateX(2%)}
+100%{-webkit-transform:translateX(0%)}
 }
-
-
-
