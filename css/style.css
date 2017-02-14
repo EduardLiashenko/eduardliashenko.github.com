@@ -221,8 +221,8 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 .page-home section.hello h1{font-size:13rem;top:8%}
 .page-home section.hello h1 span{font-size:.8rem;bottom:5%;left:3%}
-.title{font-size:1.5rem}
-.page-home section.preambule p{font-size:1.5rem}
+.title{font-size:1.3rem}
+.page-home section.preambule p{font-size:1.3rem}
 .page-home section.preambule .padding{padding:60px}
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
