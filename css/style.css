@@ -45,7 +45,7 @@ h1 span{letter-spacing:0}
 }
 .logo,.email{margin:0;padding:0;list-style:none}
 .header .logo{position:fixed;z-index:1000;top:15px;left:40px;display:block}
-.header .email li{display: inline-block;}
+.header .email li{display:inline-block}
 .logo li a{position:relative;padding:0 5px}
 .logo li a span:before{position:absolute;z-index:-1;top:35%;right:0;left:0;display:block;height:8px;content:'';-webkit-transition:-webkit-transform 400ms cubic-bezier(1,0,0,1);-moz-transition:-moz-transform 400ms cubic-bezier(1,0,0,1);transition:transform 400ms cubic-bezier(1,0,0,1);-webkit-transform:scaleX(0) translateY(-50%);-moz-transform:scaleX(0) translateY(-50%);-ms-transform:scaleX(0) translateY(-50%);-o-transform:scaleX(0) translateY(-50%);transform:scaleX(0) translateY(-50%);-webkit-transform-origin:left center;-moz-transform-origin:left center;-ms-transform-origin:left center;-o-transform-origin:left center;transform-origin:left center;opacity:.5;background:#32ceaf}
 .logo li a:hover span:before{-webkit-transform:scaleX(1) translateY(-50%);-moz-transform:scaleX(1) translateY(-50%);-ms-transform:scaleX(1) translateY(-50%);-o-transform:scaleX(1) translateY(-50%);transform:scaleX(1) translateY(-50%)}
@@ -119,7 +119,7 @@ h1 span{letter-spacing:0}
 .page-home.showHello section.hello .hello-scrolldown{bottom:15%;left:57%}
 }
 @media (max-width: 1600px) {
-.header .email{top:2px;}
+.header .email{top:2px}
 }
 @media (max-width: 1400px) {
 .page-home section.hello h1{font-size:12rem;top:22%;margin:0 3%}
@@ -185,7 +185,7 @@ section.preambule{position:absolute!important;top:0;width:100%;height:100%;backg
 }
 .page-home.hello-hidden section.preambule{left:0}
 .page-home.hello-hidden section.hello{right:-100%}
-.page-home section.preambule p{font-size:1.2rem;font-weight:500;line-height:1.2;color:#fff;margin:0 0 25px}
+.page-home section.preambule p{font-size:.9rem;font-weight:500;line-height:1.5;color:#fff;margin:0;padding-bottom:15px}
 .page-home section.preambule p div{overflow:hidden}
 .page-home section.preambule p div span{display:inline-block}
 .page-home section.preambule p strong{font-weight:700;display:inline;color:#1c1b20}
@@ -226,9 +226,10 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 .page-home section.hello h1{font-size:13rem;top:8%}
 .page-home section.hello h1 span{font-size:.8rem;bottom:5%;left:3%}
-.title{font-size:1.3rem}
-.page-home section.preambule p{font-size:1.3rem}
+.title{font-size:1.1rem}
+.page-home section.preambule p{font-size:1.1rem}
 .page-home section.preambule .padding{padding:60px}
+.progressbar-title h3,.skills-bar-container li .progressbar-title .percent{font-size:1.3rem}
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
 .page-home section.hello h1{font-size:10.5rem;top:20%}
@@ -238,10 +239,11 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 .block-title{font-size:1.3rem}
 .page-home section.preambule p{font-size:1.2rem}
 }
-.title{position:relative;display:block;margin:5px 0}
+.title{position:relative;display:block;margin-bottom:6px}
 .txt a{line-height:1.5;position:relative;text-decoration:none;color:#fff}
 .txt a span:before{position:absolute;z-index:-1;top:35%;right:-5px;left:-5px;display:block;height:14px;content:'';-webkit-transition:-webkit-transform 400ms cubic-bezier(1,0,0,1);-moz-transition:-moz-transform 400ms cubic-bezier(1,0,0,1);transition:transform 400ms cubic-bezier(1,0,0,1);-webkit-transform:scaleX(0) translateY(-50%);-moz-transform:scaleX(0) translateY(-50%);-ms-transform:scaleX(0) translateY(-50%);-o-transform:scaleX(0) translateY(-50%);transform:scaleX(0) translateY(-50%);-webkit-transform-origin:left center;-moz-transform-origin:left center;-ms-transform-origin:left center;-o-transform-origin:left center;transform-origin:left center;opacity:1;background:#0f1525}
 .txt a:hover span:before{-webkit-transform:scaleX(1) translateY(-50%);-moz-transform:scaleX(1) translateY(-50%);-ms-transform:scaleX(1) translateY(-50%);-o-transform:scaleX(1) translateY(-50%);transform:scaleX(1) translateY(-50%)}
+a.check-mark{line-height:2}
 .slideLeft{animation-name:slideLeft;-webkit-animation-name:slideLeft;animation-duration:4s;-webkit-animation-duration:4s;animation-timing-function:ease-in-out;-webkit-animation-timing-function:ease-in-out;visibility:visible!important}
 @keyframes slideLeft {
 0%{transform:translateX(150%)}
@@ -260,7 +262,7 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 100%{-webkit-transform:translateX(0%)}
 }
 .but.ico{padding:10px 10px 5px 35px}
-.but.opc-1{border:1px solid rgba(0, 0, 0, .7);}
+.but.opc-1{border:1px solid rgba(0,0,0,.7)}
 .but.opc-1.ico{vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative}
 .but.opc-1.ico:before,.but.opc-1.ico:after{position:absolute;left:15px;padding:0 1px}
 .but.opc-1.ico:after{top:0}
@@ -276,3 +278,85 @@ to{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transf
 100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)}
 }
 .email li a{display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex;padding-right:15px}
+.skills-bar-container{width:80%;padding:0;list-style:none;margin:0;padding-bottom:15px}
+.skills-bar-container li{position:relative;width:100%;padding:0}
+.skills-bar-container li .progressbar-title{color:#fff}
+.progressbar-title h3{margin:0;text-transform:lowercase;font-size:.9em;font-weight:400}
+.skills-bar-container li .progressbar-title h3{display:inline-block}
+.skills-bar-container li .progressbar-title .percent{position:absolute;right:5px;top:5px;font-size:.9em}
+.skills-bar-container li .bar-container{background:rgba(0,0,0,.2);position:relative;width:100%;height:5px;display:block;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px}
+.skills-bar-container li .bar-container .progressbar{position:absolute;width:0;height:100%;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.skills-bar-container li .bar-container #progress-html{-webkit-animation-name:progress-html;animation-name:progress-html;-webkit-animation-delay:.7s;animation-delay:.7s}
+.skills-bar-container li .bar-container #progress-css{-webkit-animation-name:progress-css;animation-name:progress-css;-webkit-animation-delay:1.4s;animation-delay:1.4s}
+.skills-bar-container li .bar-container #progress-javascript{-webkit-animation-name:progress-javascript;animation-name:progress-javascript;-webkit-animation-delay:2.1s;animation-delay:2.1s}
+.skills-bar-container li .bar-container #progress-gr{-webkit-animation-name:progress-gr;animation-name:progress-gr;-webkit-animation-delay:2.8s;animation-delay:2.8s}
+.skills-bar-container li .bar-container #progress-git{-webkit-animation-name:progress-git;animation-name:progress-git;-webkit-animation-delay:3.5s;animation-delay:3.5s}
+.progresscolor{background-color:#8be4d9}
+.percent{font-weight:400}
+@-webkit-keyframes progress-html {
+0%{width:0}
+100%{width:91%}
+}
+@-webkit-keyframes progress-css {
+0%{width:0}
+100%{width:85%}
+}
+@-webkit-keyframes progress-javascript {
+0%{width:0}
+100%{width:45%}
+}
+@-webkit-keyframes progress-gr {
+0%{width:0}
+100%{width:35%}
+}
+@-webkit-keyframes progress-git {
+0%{width:0}
+100%{width:65%}
+}
+@-moz-keyframes progress-html {
+0%{width:0}
+100%{width:91%}
+}
+@-moz-keyframes progress-css {
+0%{width:0}
+100%{width:85%}
+}
+@-moz-keyframes progress-javascript {
+0%{width:0}
+100%{width:45%}
+}
+@-moz-keyframes progress-gr {
+0%{width:0}
+100%{width:35%}
+}
+@-moz-keyframes progress-git {
+0%{width:0}
+100%{width:65%}
+}
+@keyframes progress-html {
+0%{width:0}
+100%{width:91%}
+}
+@keyframes progress-css {
+0%{width:0}
+100%{width:85%}
+}
+@keyframes progress-javascript {
+0%{width:0}
+100%{width:45%}
+}
+@keyframes progress-gr {
+0%{width:0}
+100%{width:35%}
+}
+@keyframes progress-git {
+0%{width:0}
+100%{width:65%}
+}
+.check-mark:before{content:'';width:12px;height:12px;margin-right:10px;display:inline-block;background:url(../images/icon/add.svg);background-position:50%;background-size:100%}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+.progressbar-title h3,.skills-bar-container li .progressbar-title .percent{font-size:1.1rem}
+}
+.padding span:last-of-type .title{margin-top:8px}
+.under{position:relative}
+.txt a span:after{position:absolute;left:0;bottom:4px;display:block;width:100%;content:'';border:1px solid #fff}

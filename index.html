@@ -110,15 +110,61 @@
                   </span>
                   <span class="block-title">
                     <span class="title">SKILLS</span>
-                    <p class="txt">Responsive web development, html5, css3, less, javascript, reactjs, nodejs, gulp, git, photoshop, ...</p>
+                    <ul class="skills-bar-container">
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>HTML5</h3>
+                          <span class="percent" id="html-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-html"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>CSS3</h3>
+                          <span class="percent" id="css-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-css"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>JavaScript</h3>
+                          <span class="percent" id="javascript-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-javascript"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>Git</h3>
+                          <span class="percent" id="git-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-git"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>Graphic redactor </h3>
+                          <span class="percent" id="gr-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-gr"></span>
+                        </div>
+                      </li>
+                    </ul>
                   </span>
                   <span class="block-title">
                     <span class="title">Projects</span>
                     <p class="txt">
-                      <a target="_blank" href="https://trailukraine.com/"><span>TrailUkraine</span></a><br>
-                      <a target="_blank" href="http://ps-horti.com/"><span>PowerStar</span></a><br>
-                      <a target="_blank" href="http://liga.net"><span>LIGA Group companies</span></a><br>
-                      <a target="_blank" href="https://gotovo.net.ua/"><span>Dokument-servis “Gotovo”</span></a>
+                      <a class="check-mark" target="_blank" href="https://trailukraine.com/"><span class="under">TrailUkraine (website development)</span></a><br>
+                      <a class="check-mark" target="_blank" href="http://ps-horti.com/"><span class="under">PowerStar (corporate website development)</span></a><br>
+                      <a class="check-mark" target="_blank" href="http://liga.net"><span class="under">LIGA Group companies (web experience redesign)</span></a><br>
+                      <a class="check-mark" target="_blank" href="https://gotovo.net.ua/"><span class="under">Dokument-servis “Gotovo” (mobile friendly, fully responsive)</span></a>
                     </p>
                   </span>
                 </div>
@@ -228,5 +274,28 @@
       $('.preambule').css('left','');
       });
       }; 
+    </script>
+    <script type="text/javascript">
+      var lang = {
+          "html": "91%",
+          "css": "85%",
+          "javascript": "45%",
+          "git": "65%",
+          "gr": "35%"
+        };
+
+        var multiply = 4;
+
+        $.each( lang, function( language, pourcent) {
+
+          var delay = 700;
+          
+          setTimeout(function() {
+            $('#'+language+'-pourcent').html(pourcent);
+          },delay*multiply);
+          
+          multiply++;
+
+        });
     </script>
   </body>
