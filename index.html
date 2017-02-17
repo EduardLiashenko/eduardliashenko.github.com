@@ -100,6 +100,85 @@
               </section>
               <section class="preambule">
                 <div class="padding">
+                  <span class="block-title ">
+                    <span class="title">About</span>
+                    <p class="txt accordion">Looking for a team to contribute with my passion and hard work, to develop my skills, reach new quality levels and be the part of challenging projects.</p>
+                  </span>
+                  <span class="block-title">
+                    <span class="title">EXPERIENCE</span>
+                    <p class="txt accordion">junior Front-End Developer – <a target="_blank" href="https://face.ua/"><span>FaceInteractive</span></a></p>
+                  </span>
+                  <span class="block-title">
+                    <span class="title">SKILLS</span>
+                    <ul class="skills-bar-container accordion">
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>HTML5</h3>
+                          <span class="percent" id="html-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-html"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>CSS3</h3>
+                          <span class="percent" id="css-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-css"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>JavaScript</h3>
+                          <span class="percent" id="javascript-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-javascript"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>Git</h3>
+                          <span class="percent" id="git-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-git"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <h3>Graphic redactor </h3>
+                          <span class="percent" id="gr-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresscolor" id="progress-gr"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </span>
+                  <span class="block-title">
+                    <span class="title">Projects</span>
+                    <p class="txt accordion">
+                      <a class="check-mark" target="_blank" href="https://trailukraine.com/"><span class="under">TrailUkraine (website development)</span></a><br>
+                      <a class="check-mark" target="_blank" href="http://ps-horti.com/"><span class="under">PowerStar (corporate website development)</span></a><br>
+                      <a class="check-mark" target="_blank" href="http://liga.net"><span class="under">LIGA Group companies (web experience redesign)</span></a><br>
+                      <a class="check-mark" target="_blank" href="https://gotovo.net.ua/"><span class="under">Dokument-servis “Gotovo” (mobile friendly, fully responsive)</span></a>
+                    </p>
+                  </span>
+                </div>
+                <span class="hello-scrolldown">
+                  <i class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 17 10">
+                      <path class="cls-1" d="M6.22,8.75,3.37,5.89H17V4.12H3.37L6.22,1.25,5,0,0,5l5,5Z"></path>
+                    </svg>
+                  </i>
+                  <span class="txt"><span>t</span><span>o</span><span>p</span></span>
+                </span>
+              </section>
+<!--               <section class="preambule mobile">
+                <div class="padding">
                   <span class="block-title">
                     <span class="title">About</span>
                     <p class="txt">Looking for a team to contribute with my passion and hard work, to develop my skills, reach new quality levels and be the part of challenging projects.</p>
@@ -176,7 +255,7 @@
                   </i>
                   <span class="txt"><span>t</span><span>o</span><span>p</span></span>
                 </span>
-              </section>
+              </section> -->
             </div>
           </main>
         </div>
@@ -189,113 +268,6 @@
       <div class="right"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script type="text/javascript">
-      window.onscroll = function() {
-          onScroll();
-      };
-      
-      function onScroll() {
-          var scrollAmount = $(window).scrollTop();
-      
-          if (scrollAmount > 10) {
-      
-              $('body').addClass('hello-hidden');
-      
-          } else {
-      
-              $('body').removeClass('hello-hidden');
-          }
-      };
-      
-      elem = document.getElementById('main-wrap');
-      if (elem.addEventListener) {
-      if ('onwheel' in document) {
-      // IE9+, FF17+, Ch31+
-      elem.addEventListener("wheel", onWheel);
-      } else if ('onmousewheel' in document) {
-      // устаревший вариант события
-      elem.addEventListener("mousewheel", onWheel);
-      } else {
-      // Firefox < 17
-      elem.addEventListener("MozMousePixelScroll", onWheel);
-      }
-      } else { // IE8-
-      elem.attachEvent("onmousewheel", onWheel);
-      }
-      
-      function onWheel(e) {
-      e = e || window.event;
-      
-      if(e.deltaY > 0){
-      $('body').addClass('hello-hidden');
-      }else{
-      $('body').removeClass('hello-hidden');
-      }
-      }
-      
-      $(document).ready(function(){
-      $('body').touchScroll();
-      });
-      
-      $.fn.touchScroll = function(){
-      var startPos = [],
-      endPos = [];
-      
-      $(document).on('touchstart','body', function(event) {
-      $('.preambule').addClass('druggin');
-      var e = event.originalEvent;
-      startPos[0] =  e.touches[0].pageX;
-      startPos[1] = e.touches[0].pageY;
-      });
-      
-      $(document).on('touchmove','body ', function(event) {
-      
-      var e = event.originalEvent;
-      var offset =Math.abs(e.touches[0].pageY - startPos[1]) *100/$('body').height();
-      
-      body_w = $('body').width();
-      endPos[0] =  e.touches[0].pageX;
-      endPos[1] = e.touches[0].pageY;
-      if($('body').hasClass('hello-hidden')){
-      $('.preambule').css('left', '-' + offset +'%');
-      }else{
-      $('.preambule').css('left', '-' + (100 - offset) +'%');
-      }
-      
-      });
-      
-      $(document).on('touchend','body', function(event) {
-      if(endPos[1] > startPos[1]){
-      $('body').addClass('hello-hidden');
-      }else{
-      $('body').removeClass('hello-hidden');
-      }
-      $('.preambule').removeClass('druggin');
-      $('.preambule').css('left','');
-      });
-      }; 
-    </script>
-    <script type="text/javascript">
-      var lang = {
-          "html": "91%",
-          "css": "85%",
-          "javascript": "45%",
-          "git": "65%",
-          "gr": "35%"
-        };
+    <script src="index.js"></script>
+</body>
 
-        var multiply = 4;
-
-        $.each( lang, function( language, pourcent) {
-
-          var delay = 700;
-          
-          setTimeout(function() {
-            $('#'+language+'-pourcent').html(pourcent);
-          },delay*multiply);
-          
-          multiply++;
-
-        });
-    </script>
-  </body>
