@@ -353,13 +353,14 @@ a.check-mark{line-height:2}
 0%{width:0}
 100%{width:65%}
 }
-.check-mark:before{content:'';width:12px;height:12px;margin-right:10px;display:inline-block;background:url(../images/icon/add.svg);background-position:50%;background-size:100%}
+.check-mark:before{content:'';width:12px;height:12px;margin-right:10px;display:inline-block;background:url(../images/icon/thin-right-arrow.svg);background-position:50%;background-size:100%}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 .progressbar-title h3,.skills-bar-container li .progressbar-title .percent{font-size:1.1rem}
 }
 .padding span:last-of-type .title{margin-top:8px}
 .under{position:relative}
 .txt a span:after{position:absolute;left:0;bottom:4px;display:block;width:100%;content:'';border:1px solid #fff}
+.txt a span:hover:after{border:none;}
 .acc-content{display:none}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
