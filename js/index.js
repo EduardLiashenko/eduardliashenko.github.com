@@ -9,7 +9,6 @@ $(document).ready(function() {
 
 $(window).resize(function() {
     checkWidthAndLoadAccordion();
-   
 });
 
       window.onscroll = function() {
