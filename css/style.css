@@ -378,7 +378,7 @@ and (orientation: landscape) {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-.page-home section.hello h1{top:-23%}
+.page-home section.hello h1{top:-20%}
 .page-home section.preambule .padding{padding:60px 35px}
 .title{font-size:1rem}
 .page-home section.preambule p{font-size:1rem;padding-bottom:0}
