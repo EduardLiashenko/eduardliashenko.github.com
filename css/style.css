@@ -358,39 +358,31 @@ a.check-mark{line-height:2}
 100%{width:65%}
 }
 .check-mark:before{content:'';width:12px;height:12px;margin-right:10px;display:inline-block;background:url(../images/icon/thin-right-arrow.svg);background-position:50%;background-size:100%}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-.progressbar-title h3,.skills-bar-container li .progressbar-title .percent{font-size:1.1rem}
-}
 .padding span:last-of-type .title{margin-top:8px}
 .acc-content{display:none}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-a.check-mark{line-height:1.7}
-.page-home section.hello h1 span{bottom:32%}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+.progressbar-title h3,.skills-bar-container li .progressbar-title .percent{font-size:1rem}
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-.page-home section.preambule p{font-size:.9em!important}
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) {
-.page-home section.hello h1{top:-20%}
-.page-home section.preambule .padding{padding:60px 35px}
+.title:first-child{margin-top:1em}
+.page-home section.preambule .padding{padding:60px 40px}
 .title{font-size:1rem}
-.page-home section.preambule p{font-size:1rem;padding-bottom:0}
+.page-home section.preambule p{font-size:1rem}
 .progressbar-title h3{font-size:1rem}
 .skills-bar-container li .progressbar-title .percent{font-size:1rem}
+.page-home section.preambule p{padding-bottom:0}
+.page-home section.hello h1 span{bottom:33%}
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
-.page-home section.hello h1{top:-24%;max-width:100%}
-.page-home section.hello h1 span{font-size:.1rem;bottom:30%}
-a.check-mark{line-height:1.5}
+.page-home section.preambule .padding{padding:60px 40px}
+.title{font-size:1rem}
+.page-home section.preambule p{font-size:1rem}
+.progressbar-title h3{font-size:1rem}
+.skills-bar-container li .progressbar-title .percent{font-size:1rem}
+.page-home section.preambule p{padding-bottom:0}
+.page-home section.hello h1{max-width:34%}
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
@@ -415,24 +407,33 @@ and (orientation: landscape) {
 .page-home section.hello h1{top:-25%;}
 .page-home section.hello h1 span{left:.5%}
 }
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-.title:first-child{margin-top:1em}
-.page-home section.preambule .padding{padding:60px 40px}
+.page-home section.hello h1{top:-20%}
+.page-home section.preambule .padding{padding:60px 35px}
 .title{font-size:1rem}
-.page-home section.preambule p{font-size:1rem}
+.page-home section.preambule p{font-size:1rem;padding-bottom:0}
 .progressbar-title h3{font-size:1rem}
 .skills-bar-container li .progressbar-title .percent{font-size:1rem}
-.page-home section.preambule p{padding-bottom:0}
-.page-home section.hello h1 span{bottom:33%}
 }
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-.page-home section.preambule .padding{padding:60px 40px}
-.title{font-size:1rem}
-.page-home section.preambule p{font-size:1rem}
-.progressbar-title h3{font-size:1rem}
-.skills-bar-container li .progressbar-title .percent{font-size:1rem}
-.page-home section.preambule p{padding-bottom:0}
-.page-home section.hello h1{max-width:34%}
+.page-home section.hello h1{top:-24%;max-width:100%}
+.page-home section.hello h1 span{font-size:.1rem;bottom:30%}
+a.check-mark{line-height:1.5}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+a.check-mark{line-height:1.7}
+.page-home section.hello h1 span{bottom:32%}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+.page-home section.preambule p{font-size:.9em!important}
 }
