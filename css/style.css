@@ -412,6 +412,7 @@ and (orientation: landscape) {
 .skills-bar-container li .progressbar-title .percent{font-size:.8rem}
 .page-home section.preambule p{padding-bottom:0}
 .page-home section.hello svg{max-width:42%}
+.page-home section.hello h1{top:-25%;}
 .page-home section.hello h1 span{left:.5%}
 }
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)
