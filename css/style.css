@@ -408,8 +408,8 @@ and (orientation: landscape) {
 .page-home section.preambule .padding{padding:60px 40px}
 .title{font-size:.8rem}
 .page-home section.preambule p{font-size:.8rem}
-.progressbar-title h3{font-size:1rem}
-.skills-bar-container li .progressbar-title .percent{font-size:1rem}
+.progressbar-title h3{font-size:.8rem}
+.skills-bar-container li .progressbar-title .percent{font-size:.8rem}
 .page-home section.preambule p{padding-bottom:0}
 .page-home section.hello svg{max-width:42%}
 .page-home section.hello h1 span{left:.5%}
