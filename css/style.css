@@ -125,7 +125,7 @@ a{text-decoration:none}
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
 .page-home section.hello svg {max-width: 95%;}
-.page-home section.hello h1 span{bottom:30%;}
+.page-home section.hello h1 span{bottom:28%;}
 .page-home section.hello .hello-scrolldown{bottom:25%}
 .page-home.showHello section.hello .hello-scrolldown{bottom:15%;left:58%}
 }
@@ -137,23 +137,21 @@ a{text-decoration:none}
 }
 @media (max-width: 1200px) {
 .page-home section.hello h1{margin:0 3.5%}
-.page-home section.hello h1 span{bottom:32%}
+.page-home section.hello h1 span{bottom:32%;font-size: .65rem;}
 .page-home.showHello section.hello .hello-scrolldown{left:57.5%}
 }
 @media (max-width: 992px) {
-.page-home section.hello h1{top:27%;margin:0 3%}
-.page-home section.hello h1 span{bottom:-10%}
+.page-home section.hello h1{margin:0 5%}
 .page-home.showHello section.hello .hello-scrolldown{left:58.5%}
 }
 @media (max-width: 768px) {
 .header .logo{display:none}
 .page-home section.hello h1{top:-25%;left:8%}
-.page-home section.hello h1 span{font-size:.5rem;bottom:30%;left:2%}
+.page-home section.hello h1 span{font-size:.7rem;bottom:30%;left:2%}
 .page-home.showHello section.hello .hello-scrolldown{bottom:45px!important}
 }
 @media (max-width: 640px) {
 .header .email{top:10px}
-.page-home section.hello h1 span{bottom:0}
 }
 @media (max-width : 568px) {
 .page-home section.hello h1{top:0}
