@@ -425,6 +425,7 @@ and (orientation: landscape) {
 a.check-mark{line-height:1.5}
 .title {font-size: .6rem;}
 .page-home section.preambule p {font-size: .6em;}
+.page-home section.preambule p:last-child {font-size: .8em;}
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
