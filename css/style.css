@@ -419,9 +419,11 @@ and (orientation: portrait) {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-.page-home section.hello h1{top:-24%;max-width:100%}
-.page-home section.hello h1 span{font-size:.1rem;bottom:30%}
+.page-home section.hello h1{top:-10%;max-width:100%}
+.page-home section.hello h1 span{font-size:.1rem;bottom:22%}
 a.check-mark{line-height:1.5}
+.title {font-size: .6rem;}
+.page-home section.preambule p {font-size: .6em!important;}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
