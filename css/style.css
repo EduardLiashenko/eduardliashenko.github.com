@@ -409,7 +409,8 @@ and (orientation: landscape) {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-.page-home section.hello h1{top:-20%}
+.header .list-socials {top: 44%;}
+.page-home section.hello h1{top:-18%;left: 6%;}
 .page-home section.preambule .padding{padding:60px 35px}
 .title{font-size:1rem}
 .page-home section.preambule p{font-size:1rem;padding-bottom:0}
@@ -419,11 +420,12 @@ and (orientation: portrait) {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
+.header .list-socials {top: 31%;}
 .page-home section.hello h1{top:-10%;max-width:100%}
 .page-home section.hello h1 span{font-size:.1rem;bottom:22%}
 a.check-mark{line-height:1.5}
 .title {font-size: .6rem;}
-.page-home section.preambule p {font-size: .6em!important;}
+.page-home section.preambule p {font-size: .6em;}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
@@ -435,5 +437,5 @@ a.check-mark{line-height:1.7}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-.page-home section.preambule p{font-size:.9em!important}
+.page-home section.preambule p{font-size:.9em}
 }
