@@ -405,7 +405,6 @@ and (orientation: landscape) {
 .page-home section.hello h1{top:-25%;}
 .page-home section.hello h1 span{left:.5%}
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
@@ -427,7 +426,6 @@ a.check-mark{line-height:1.5}
 .title {font-size: .6rem;}
 .page-home section.preambule p {font-size: .6em;}
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
@@ -437,5 +435,5 @@ a.check-mark{line-height:1.7}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-.page-home section.preambule p{font-size:.9em}
+.page-home section.preambule p{font-size:.6em}
 }
