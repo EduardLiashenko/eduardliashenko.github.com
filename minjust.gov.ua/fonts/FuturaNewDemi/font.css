@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FuturaNewDemi-Reg';
+  src: url('FuturaNewDemi-Reg.eot');
+  src: url('FuturaNewDemi-Reg.woff2') format('woff2'),
+       url('FuturaNewDemi-Reg.woff') format('woff'),
+       url('FuturaNewDemi-Reg.ttf') format('truetype'),
+       url('FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg') format('svg'),
+       url('FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

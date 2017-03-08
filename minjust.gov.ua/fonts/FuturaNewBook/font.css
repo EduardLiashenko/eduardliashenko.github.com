@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FuturaNewBook-Reg';
+  src: url('FuturaNewBook-Reg.eot');
+  src: url('FuturaNewBook-Reg.woff2') format('woff2'),
+       url('FuturaNewBook-Reg.woff') format('woff'),
+       url('FuturaNewBook-Reg.ttf') format('truetype'),
+       url('FuturaNewBook-Reg.svg#FuturaNewBook-Reg') format('svg'),
+       url('FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

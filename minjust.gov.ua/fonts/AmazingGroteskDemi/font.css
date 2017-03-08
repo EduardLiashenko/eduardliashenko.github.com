@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AmazingGrotesk-DemiBold';
+  src: url('AmazingGrotesk-DemiBold.eot');
+  src: url('AmazingGrotesk-DemiBold.woff2') format('woff2'),
+       url('AmazingGrotesk-DemiBold.woff') format('woff'),
+       url('AmazingGrotesk-DemiBold.ttf') format('truetype'),
+       url('AmazingGrotesk-DemiBold.svg#AmazingGrotesk-DemiBold') format('svg'),
+       url('AmazingGrotesk-DemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
