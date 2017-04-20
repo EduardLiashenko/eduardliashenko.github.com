@@ -31,16 +31,16 @@ $(window).resize(function() {
       elem = document.getElementById('main-wrap');
         if (elem.addEventListener) {
           if ('onwheel' in document) {
-          // IE9+, FF17+, Ch31+
+
           elem.addEventListener("wheel", onWheel);
           } else if ('onmousewheel' in document) {
-          // устаревший вариант события
+
           elem.addEventListener("mousewheel", onWheel);
           } else {
-          // Firefox < 17
+
           elem.addEventListener("MozMousePixelScroll", onWheel);
           }
-        } else { // IE8-
+        } else {
           elem.attachEvent("onmousewheel", onWheel);
         }
 
@@ -96,9 +96,9 @@ $(window).resize(function() {
       var lang = {
           "html": "91%",
           "css": "85%",
-          "javascript": "45%",
+          "javascript": "35%",
           "git": "65%",
-          "gr": "35%"
+          "gr": "55%"
         };
 
         var multiply = 4;
@@ -119,7 +119,7 @@ $(window).resize(function() {
 function checkWidthAndLoadAccordion() {
     if($(window).width() < 767) {
 
-         $('.title').addClass('acc-btn');
+        $('.title').addClass('acc-btn');
         $('.accordion').addClass('acc-content');
         $('.accordion').fadeOut(800);
       }else{
