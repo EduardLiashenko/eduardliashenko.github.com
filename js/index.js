@@ -154,12 +154,12 @@ function Accordion() {
 // }
 
 
-// $(document).ready(function() {
-//    $(".bg-hello").tilt({
-//     speed: 500,
-//     perspective: 5000,
-//      glare: true,
-//      maxGlare: 0.10,
-//      reset: false
-//   });
-// });
+$(document).ready(function() {
+   $(".bg-hello").tilt({
+    speed: 500,
+    perspective: 5000,
+     glare: true,
+     maxGlare: 0.10,
+     reset: false
+  });
+});
