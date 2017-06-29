@@ -142,16 +142,16 @@ function Accordion() {
 };
 
 
-if('ontouchstart' in window == false){
-  $('.hello').mousemove(function(e){
-    var moveX = -1*(e.pageX * -1 / 25);
-    var moveY = (e.pageY * -1 / 25);
+// if('ontouchstart' in window == false){
+//   $('.hello').mousemove(function(e){
+//     var moveX = -1*(e.pageX * -1 / 25);
+//     var moveY = (e.pageY * -1 / 25);
 
-    //$('.outer').css('background-position', ($('.outer').width()/2+moveX)+'px ' + moveY + 'px');
-    $('.outer').css('background-position-x', 'calc(50% - '+moveX+'px) ');
-    $('.outer').css('background-position-y', moveY + 'px');
-  });
-}
+//     //$('.outer').css('background-position', ($('.outer').width()/2+moveX)+'px ' + moveY + 'px');
+//     $('.outer').css('background-position-x', 'calc(50% - '+moveX+'px) ');
+//     $('.outer').css('background-position-y', moveY + 'px');
+//   });
+// }
 
 
 // $(document).ready(function() {
