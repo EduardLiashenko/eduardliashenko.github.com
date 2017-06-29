@@ -140,3 +140,26 @@ function Accordion() {
     }
   });
 };
+
+
+if('ontouchstart' in window == false){
+  $('.hello').mousemove(function(e){
+    var moveX = -1*(e.pageX * -1 / 25);
+    var moveY = (e.pageY * -1 / 25);
+
+    //$('.outer').css('background-position', ($('.outer').width()/2+moveX)+'px ' + moveY + 'px');
+    $('.outer').css('background-position-x', 'calc(50% - '+moveX+'px) ');
+    $('.outer').css('background-position-y', moveY + 'px');
+  });
+}
+
+
+// $(document).ready(function() {
+//    $(".bg-hello").tilt({
+//     speed: 500,
+//     perspective: 5000,
+//      glare: true,
+//      maxGlare: 0.10,
+//      reset: false
+//   });
+// });

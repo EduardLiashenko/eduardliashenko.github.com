@@ -63,7 +63,7 @@ a{text-decoration:none}
 .page{position:relative;z-index:10;display:block;overflow:hidden;min-height:100vh}
 .page-home .page > *{position:relative;z-index:10}
 .page-home section.hello{position:relative;z-index:2!important}
-.bg-hello{position:absolute;z-index:100;top:40px;left:0;display:-ms-flexbox;display:-webkit-flex;display:flex;width:50%;min-height:calc(100% - 80px);transition:left .7s linear;background-color:#32ceaf;background-image:url(../images/medium.png);background-repeat:no-repeat;background-position:50% 100%;background-size:contain;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
+.bg-hello{position:absolute;z-index:100;top:40px;left:0;display:-ms-flexbox;display:-webkit-flex;display:flex;width:50%;min-height:calc(100% - 80px);transition:left .7s linear;background-color:#32ceaf;background-image:url(../images/medium.png);background-repeat:no-repeat;background-position:50% 50%;background-size:contain;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
 @media (max-width: 768px) {
 .bg-hello{background-image:url(../images/small.png)}
 }
