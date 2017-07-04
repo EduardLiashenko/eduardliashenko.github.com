@@ -50,14 +50,14 @@ a{text-decoration:none}
 .logo li a:hover span:before{-webkit-transform:scaleX(1) translateY(-50%);-ms-transform:scaleX(1) translateY(-50%);transform:scaleX(1) translateY(-50%)}
 .logo a{font-size:.8rem;font-weight:900;display:block;text-decoration:none;letter-spacing:.1em;text-transform:capitalize;color:#1a282e}
 .header .email{position:fixed;z-index:1001;top:15px;right:40px;display:block}
-.email li a{opacity:.7;color:#1a282e}
-.email li a:hover{opacity:1}
+.email li a{opacity:.7;color:#1a282e; transition: all 300ms ease-in-out;}
+.email li a:hover{opacity:1; transition: all 300ms ease-in-out;}
 .email a{font-size:.7rem;font-weight:600;display:block;text-decoration:none}
-.list-socials{margin:0;padding:0;list-style:none}
-.list-socials ul li:hover a{-webkit-transform:translateY(-4px);-ms-transform:translateY(-4px);transform:translateY(-4px)}
+.list-socials{margin:0;padding:0;list-style:none; transition: all 300ms ease-in-out;}
+.list-socials ul li:hover a{-webkit-transform:translateY(-4px);-ms-transform:translateY(-4px);transform:translateY(-4px);transition: all 300ms ease-in-out;}
 .header .list-socials{position:fixed;z-index:500;top:50%;right:15px}
-.list-socials li a{opacity:1;color:#141222}
-.list-socials li:hover a{opacity:.5}
+.list-socials li a{opacity:1;color:#141222; transition: all 300ms ease-in-out;}
+.list-socials li:hover a{opacity:.5; transition: all 300ms ease-in-out;}
 .app{position:relative;z-index:1;min-height:100vh}
 .page-container{position:relative;overflow:hidden;min-height:100vh;background:#f8f8f8}
 .page{position:relative;z-index:10;display:block;overflow:hidden;min-height:100vh}
